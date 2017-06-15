@@ -11,9 +11,10 @@ public class Solution {
         int n = in.nextInt();
         int[] calories = new int[n];
         for(int calories_i=0; calories_i < n; calories_i++){
-            calories[calories_i] = in.nextInt();
+            
+		calories[calories_i] = in.nextInt();
         }
-       	long int count=0, prev=0;
+       	long int count=0,prev=0;
         for(int i=0;i<n;i++)
         {
         	count= count+ (calories[i]*Math.pow(2,i));	
